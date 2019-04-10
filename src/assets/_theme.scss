@@ -1,0 +1,15 @@
+// Importing our custom palette definitions.
+@import 'palette';
+
+@include mat-core();
+
+// Creating 'primary', 'accent' and 'warn'.
+$primary: mat-palette($mat-blue);
+$accent: mat-palette($mat-secondary);
+$warn: mat-palette($mat-red);
+
+// Create the theme object.
+$theme: mat-light-theme($primary, $accent, $warn);
+
+// Include theme styles for core and each component used in your app.
+@include angular-material-theme($theme);

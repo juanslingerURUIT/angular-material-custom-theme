@@ -1,0 +1,101 @@
+@import '~@angular/material/theming';
+@import 'variables';
+
+$mat-blue: (
+    50: $blue-50,
+    100: $blue-100,
+    200: $blue-200,
+    300: $blue-300,
+    400: $blue-400,
+    500: $blue-500,
+    600: $blue-600,
+    700: $blue-700,
+    800: $blue-800,
+    900: $blue-900,
+    A100: $blue-900,
+    A200: $blue-900,
+    A400: $blue-900,
+    A700: $blue-900,
+    contrast: (
+        50: $secondary-50,
+        100: $secondary-50,
+        200: $secondary-50,
+        300: $secondary-50,
+        400: $secondary-50,
+        500: $secondary-50,
+        600: $secondary-50,
+        700: $secondary-50,
+        800: $secondary-50,
+        900: $secondary-50,
+        A100: $secondary-50,
+        A200: $secondary-50,
+        A400: $secondary-50,
+        A700: $secondary-50
+    )
+);
+
+$mat-secondary: (
+    50: $secondary-50,
+    100: $secondary-100,
+    200: $secondary-200,
+    300: $secondary-300,
+    400: $secondary-400,
+    500: $secondary-500,
+    600: $secondary-600,
+    700: $secondary-700,
+    800: $secondary-800,
+    900: $secondary-900,
+    A100: $secondary-A100,
+    A200: $secondary-A200,
+    A400: $secondary-A400,
+    A700: $secondary-A700,
+    contrast: (
+        50: $secondary-50,
+        100: $secondary-50,
+        200: $secondary-50,
+        300: $secondary-50,
+        400: $secondary-50,
+        500: $secondary-50,
+        600: $secondary-50,
+        700: $secondary-50,
+        800: $secondary-50,
+        900: $secondary-50,
+        A100: $secondary-50,
+        A200: $secondary-50,
+        A400: $secondary-50,
+        A700: $secondary-50
+    )
+);
+
+$mat-red: (
+    50: $red-50,
+    100: $red-100,
+    200: $red-200,
+    300: $red-300,
+    400: $red-400,
+    500: $red-500,
+    600: $red-600,
+    700: $red-700,
+    800: $red-800,
+    900: $red-900,
+    A100: $red-900,
+    A200: $red-900,
+    A400: $red-900,
+    A700: $red-900,
+    contrast: (
+        50: $secondary-50,
+        100: $secondary-50,
+        200: $secondary-50,
+        300: $secondary-50,
+        400: $secondary-50,
+        500: $secondary-50,
+        600: $secondary-50,
+        700: $secondary-50,
+        800: $secondary-50,
+        900: $secondary-50,
+        A100: $secondary-50,
+        A200: $secondary-50,
+        A400: $secondary-50,
+        A700: $secondary-50
+    )
+);
