@@ -2,11 +2,21 @@ import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
 
 import { ButtonComponent } from "./button/button.component";
+import { InputComponent } from "./input/input.component";
 
 const routes: Routes = [
   {
-    path: "",
+    path: "buttons",
     component: ButtonComponent
+  },
+  {
+    path: "inputs",
+    component: InputComponent
+  },
+  {
+    path: "",
+    pathMatch: "full",
+    redirectTo: "buttons"
   }
 ];
 

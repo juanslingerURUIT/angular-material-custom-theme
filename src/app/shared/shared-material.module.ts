@@ -1,6 +1,7 @@
 import { NgModule } from "@angular/core";
 import {
   MatButtonModule,
+  MatGridListModule,
   MatIconModule,
   MatInputModule,
   MatPaginatorModule,
@@ -13,6 +14,7 @@ import {
 
 const Shared_Material = [
   MatButtonModule,
+  MatGridListModule,
   MatIconModule,
   MatInputModule,
   MatPaginatorModule,

@@ -1,0 +1,72 @@
+<h1>Inputs</h1>
+
+<mat-grid-list cols="2" rowHeight="2:1">
+  <mat-grid-tile>
+    <form [formGroup]="formGroup">
+      <h2 class="section-title">Legacy</h2>
+      <mat-form-field appearance="legacy" color="accent">
+        <mat-label>First Name</mat-label>
+        <input matInput placeholder="First Name" formControlName="firstName" />
+      </mat-form-field>
+      <mat-form-field appearance="legacy" color="warn">
+        <mat-label>Last Name</mat-label>
+        <input matInput placeholder="Last Name" formControlName="lastName" />
+      </mat-form-field>
+      <mat-form-field appearance="legacy" color="primary">
+        <mat-label>Phone</mat-label>
+        <input matInput placeholder="Phone" formControlName="phone" />
+      </mat-form-field>
+    </form>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <form [formGroup]="formGroup">
+      <h2 class="section-title">Standard</h2>
+      <mat-form-field appearance="standard" color="accent">
+        <mat-label>First Name</mat-label>
+        <input matInput placeholder="First Name" formControlName="firstName" />
+      </mat-form-field>
+      <mat-form-field appearance="standard" color="warn">
+        <mat-label>Last Name</mat-label>
+        <input matInput placeholder="Last Name" formControlName="lastName" />
+      </mat-form-field>
+      <mat-form-field appearance="standard" color="primary">
+        <mat-label>Phone</mat-label>
+        <input matInput placeholder="Phone" formControlName="phone" />
+      </mat-form-field>
+    </form>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <form [formGroup]="formGroup">
+      <h2 class="section-title">Fill</h2>
+      <mat-form-field appearance="fill" color="accent">
+        <mat-label>First Name</mat-label>
+        <input matInput placeholder="First Name" formControlName="firstName" />
+      </mat-form-field>
+      <mat-form-field appearance="fill" color="warn">
+        <mat-label>Last Name</mat-label>
+        <input matInput placeholder="Last Name" formControlName="lastName" />
+      </mat-form-field>
+      <mat-form-field appearance="fill" color="primary">
+        <mat-label>Phone</mat-label>
+        <input matInput placeholder="Phone" formControlName="phone" />
+      </mat-form-field>
+    </form>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <form [formGroup]="formGroup">
+      <h2 class="section-title">Outline</h2>
+      <mat-form-field appearance="outline" color="accent">
+        <mat-label>First Name</mat-label>
+        <input matInput placeholder="First Name" formControlName="firstName" />
+      </mat-form-field>
+      <mat-form-field appearance="outline" color="warn">
+        <mat-label>Last Name</mat-label>
+        <input matInput placeholder="Last Name" formControlName="lastName" />
+      </mat-form-field>
+      <mat-form-field appearance="outline" color="primary">
+        <mat-label>Phone</mat-label>
+        <input matInput placeholder="Phone" formControlName="phone" />
+      </mat-form-field>
+    </form>
+  </mat-grid-tile>
+</mat-grid-list>

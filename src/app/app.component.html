@@ -1,10 +1,10 @@
 <header></header>
 <mat-sidenav-container class="sidenav-container">
   <mat-sidenav opened mode="side" class="left-menu">
-    <a mat-button routerLink="/" routerLinkActive="active-link">
+    <a mat-button routerLink="/buttons" routerLinkActive="active-link">
       <mat-icon>bookmark_border</mat-icon>
     </a>
-    <button mat-button>
+    <button mat-button routerLink="/inputs" routerLinkActive="active-link">
       <mat-icon>accessibility</mat-icon>
 
     </button>
@@ -35,31 +35,6 @@
 </mat-sidenav-container>
 
 <!-- <h3>Button</h3>
-
-
-<h3>Inputs</h3>
-<form class="form">
-  <mat-form-field appearance="legacy" color="accent">
-    <mat-label>Legacy form field</mat-label>
-    <input matInput placeholder="Placeholder" />
-    <mat-hint>Hint</mat-hint>
-  </mat-form-field>
-  <mat-form-field appearance="standard" color="warn">
-    <mat-label>Standard form field</mat-label>
-    <input matInput placeholder="Placeholder" />
-    <mat-hint>Hint</mat-hint>
-  </mat-form-field>
-  <mat-form-field appearance="fill" color="primary">
-    <mat-label>Fill form field</mat-label>
-    <input matInput placeholder="Placeholder" />
-    <mat-hint>Hint</mat-hint>
-  </mat-form-field>
-  <mat-form-field appearance="outline" color="warn">
-    <mat-label>Outline form field</mat-label>
-    <input matInput placeholder="Placeholder" />
-    <mat-hint>Hint</mat-hint>
-  </mat-form-field>
-</form>
 
 <h3>Tabs</h3>
 <mat-tab-group>
