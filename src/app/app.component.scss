@@ -1,3 +1,39 @@
+@import '../assets/variables';
+
+:host {
+  background-color: $grey;
+}
+
+.sidenav-container {
+  height: calc(100% - 70px);
+}
+
+.left-menu {
+  background-color: $blue-900;
+  color: $secondary-50;
+
+  button {
+    display: block;
+    margin: 16px 0;
+  }
+}
+
+.active-link::before {
+  // border-left: 1px solid red;
+  background-color: $red-500;
+  content: '';
+  display: block;
+  height: 36px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 4px;
+}
+
+.main-content {
+  padding: 8px;
+}
+
 .form {
   display: flex;
   .mat-form-field {

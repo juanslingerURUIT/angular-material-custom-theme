@@ -1,33 +1,21 @@
 import { NgModule } from "@angular/core";
-import {
-  MatButtonModule,
-  MatIconModule,
-  MatInputModule,
-  MatPaginatorModule,
-  MatSortModule,
-  MatTableModule,
-  MatTabsModule,
-  MatTreeModule
-} from "@angular/material";
 import { BrowserModule } from "@angular/platform-browser";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
+import { ButtonComponent } from './button/button.component';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [
+    AppComponent,
+    ButtonComponent
+  ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatButtonModule,
-    MatIconModule,
-    MatInputModule,
-    MatPaginatorModule,
-    MatSortModule,
-    MatTableModule,
-    MatTabsModule,
-    MatTreeModule,
+    SharedModule,
     AppRoutingModule
   ],
   providers: [],

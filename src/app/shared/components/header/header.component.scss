@@ -1,0 +1,21 @@
+@import '../../assets/variables';
+
+:host {
+    background-color: $secondary-50;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    padding: 8px;
+    width: 100%;
+}
+
+.logo {
+    background: url('./uru_flag.png') no-repeat;
+    background-size: contain;
+    height: 50px;
+    width: 50px;
+}
+
+.profile {
+    height: 50px;
+}
