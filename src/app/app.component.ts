@@ -1,6 +1,4 @@
-import { NestedTreeControl } from "@angular/cdk/tree";
 import { Component, OnInit, ViewChild } from "@angular/core";
-import { MatTreeNestedDataSource } from "@angular/material/tree";
 import { MatPaginator, MatSort, MatTableDataSource } from "@angular/material";
 
 @Component({
@@ -9,15 +7,9 @@ import { MatPaginator, MatSort, MatTableDataSource } from "@angular/material";
   styleUrls: ["./app.component.scss"]
 })
 export class AppComponent implements OnInit {
-  dataSource = new MatTreeNestedDataSource<FoodNode>();
   title = "test-material";
-  treeControl = new NestedTreeControl<FoodNode>(node => node.children);
   displayedColumns: string[] = ["position", "name", "weight", "symbol"];
   dataSourceTable = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
-
-  constructor() {
-    this.dataSource.data = TREE_DATA;
-  }
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
@@ -31,14 +23,8 @@ export class AppComponent implements OnInit {
     this.dataSourceTable.filter = filterValue.trim().toLowerCase();
   }
 
-  hasChild = (_: number, node: FoodNode) =>
-    !!node.children && node.children.length > 0;
 }
 
-interface FoodNode {
-  name: string;
-  children?: FoodNode[];
-}
 
 interface PeriodicElement {
   name: string;
@@ -46,26 +32,6 @@ interface PeriodicElement {
   weight: number;
   symbol: string;
 }
-
-const TREE_DATA: FoodNode[] = [
-  {
-    name: "Fruit",
-    children: [{ name: "Apple" }, { name: "Banana" }, { name: "Fruit loops" }]
-  },
-  {
-    name: "Vegetables",
-    children: [
-      {
-        name: "Green",
-        children: [{ name: "Broccoli" }, { name: "Brussel sprouts" }]
-      },
-      {
-        name: "Orange",
-        children: [{ name: "Pumpkins" }, { name: "Carrots" }]
-      }
-    ]
-  }
-];
 
 const ELEMENT_DATA: PeriodicElement[] = [
   { position: 1, name: "Hydrogen", weight: 1.0079, symbol: "H" },

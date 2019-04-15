@@ -1,0 +1,100 @@
+<h1>Material Tabs</h1>
+
+<mat-tab-group mat-align-tabs="center" animationDuration="1000ms">
+  <mat-tab label="Buttons">
+    <ng-template matTabContent>
+      <section>
+        <h2 class="section-title">Raised buttons</h2>
+        <button mat-raised-button color="primary">Click</button>
+        <button mat-raised-button color="accent">Click</button>
+        <button mat-raised-button color="warn">Click</button>
+      </section>
+
+      <section>
+        <h2 class="section-title">Stroked buttons</h2>
+        <button mat-stroked-button color="primary">Click</button>
+        <button mat-stroked-button color="accent">Click</button>
+        <button mat-stroked-button color="warn">Click</button>
+      </section>
+
+      <section>
+        <h2 class="section-title">Stroked buttons</h2>
+        <button mat-fab color="primary">Click</button>
+        <button mat-fab color="accent">Click</button>
+        <button mat-fab color="warn">Click</button>
+      </section>
+
+      <section>
+        <h2 class="section-title">Raised buttons with icons</h2>
+        <button mat-raised-button color="primary">
+          <mat-icon>bookmark_border</mat-icon>Click
+        </button>
+        <button mat-raised-button color="accent">
+          <mat-icon>bookmark_border</mat-icon>Click
+        </button>
+        <button mat-raised-button color="warn">
+          <mat-icon>bookmark_border</mat-icon>Click
+        </button>
+      </section>
+    </ng-template>
+  </mat-tab>
+  <mat-tab label="Forms">
+    <ng-template matTabContent>
+      <h2 class="section-title">Outline</h2>
+      <form>
+        <mat-form-field appearance="outline" color="accent">
+          <mat-label>First Name</mat-label>
+          <input matInput placeholder="First Name" />
+        </mat-form-field>
+        <mat-form-field appearance="outline" color="warn">
+          <mat-label>Last Name</mat-label>
+          <input matInput placeholder="Last Name" />
+        </mat-form-field>
+        <mat-form-field appearance="outline" color="primary">
+          <mat-label>Phone</mat-label>
+          <input matInput placeholder="Phone" />
+        </mat-form-field>
+      </form>
+    </ng-template>
+  </mat-tab>
+  <mat-tab label="Tree">
+    <ng-template matTabContent>
+      <h2 class="section-title">Tree</h2>
+      <mat-tree
+        [dataSource]="dataSource"
+        [treeControl]="treeControl"
+        class="example-tree"
+      >
+        <mat-tree-node *matTreeNodeDef="let node" matTreeNodeToggle>
+          <li class="mat-tree-node">
+            <button mat-icon-button disabled></button>
+            {{ node.name }}
+          </li>
+        </mat-tree-node>
+        <mat-nested-tree-node *matTreeNodeDef="let node; when: hasChild">
+          <li>
+            <div class="mat-tree-node">
+              <button
+                mat-icon-button
+                matTreeNodeToggle
+                [attr.aria-label]="'toggle ' + node.name"
+              >
+                <mat-icon class="mat-icon-rtl-mirror">
+                  {{
+                    treeControl.isExpanded(node)
+                      ? "expand_more"
+                      : "chevron_right"
+                  }}
+                </mat-icon>
+              </button>
+              {{ node.name }}
+            </div>
+            <ul [class.example-tree-invisible]="!treeControl.isExpanded(node)">
+              <ng-container matTreeNodeOutlet></ng-container>
+            </ul>
+          </li>
+        </mat-nested-tree-node>
+      </mat-tree>
+    </ng-template>
+  </mat-tab>
+</mat-tab-group>

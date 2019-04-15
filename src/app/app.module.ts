@@ -8,12 +8,14 @@ import { AppComponent } from "./app.component";
 import { ButtonComponent } from './button/button.component';
 import { InputComponent } from './input/input.component';
 import { SharedModule } from './shared/shared.module';
+import { TabComponent } from './tab/tab.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ButtonComponent,
-    InputComponent
+    InputComponent,
+    TabComponent
   ],
   imports: [
     BrowserModule,

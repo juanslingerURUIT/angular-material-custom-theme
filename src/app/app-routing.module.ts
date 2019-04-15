@@ -3,6 +3,7 @@ import { Routes, RouterModule } from "@angular/router";
 
 import { ButtonComponent } from "./button/button.component";
 import { InputComponent } from "./input/input.component";
+import { TabComponent } from './tab/tab.component';
 
 const routes: Routes = [
   {
@@ -12,6 +13,10 @@ const routes: Routes = [
   {
     path: "inputs",
     component: InputComponent
+  },
+  {
+    path: "tabs",
+    component: TabComponent
   },
   {
     path: "",
