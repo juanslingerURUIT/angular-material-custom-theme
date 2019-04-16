@@ -1,0 +1,39 @@
+@import '../../assets/variables';
+
+.filter {
+  font-size: 14px;
+  padding: 16px;
+  width: 100%;
+}
+
+table {
+  width: 100%;
+}
+
+.mat-column-id,
+.mat-column-postId {
+  width: 5%;
+}
+
+.mat-column-name {
+  width: 20%;
+}
+
+.mat-column-email {
+  width: 15%;
+}
+
+.mat-column-body {
+  width: 55%;
+}
+
+tr.mat-row {
+  cursor: pointer;
+  &:hover {
+    background-color: $blue-100;
+  }
+  .mat-cell {
+    padding-right: 8px;
+    word-break: break-all;
+  }
+}
